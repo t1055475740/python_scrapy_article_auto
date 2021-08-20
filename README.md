@@ -1,11 +1,12 @@
 因保存目录会对应改变，查看 ImagePipeline 保存图片源码后发现不适用此项目，索性也就不用pipelines，采取暴力 open write 存储。
+
 以下为代码片段：
 
 
-start_urls = [
-        'http://health.people.com.cn',
-        'http://health.people.com.cn/GB/408572/index.html',
-    ]
+    start_urls = [
+                'http://health.people.com.cn',
+                'http://health.people.com.cn/GB/408572/index.html',
+            ]
 
     def parse(self, response):
 
