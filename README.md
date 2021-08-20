@@ -1,4 +1,4 @@
-因保存目录会对应改变，查看 ImagePipeline 保存图片源码后发现不适用此项目，索性也就不用pipelines，采取暴力 open write 存储。
+因种种问题，考虑到时间成本，所以采取暴力 open write 图片存储。
 
 以下为代码片段：
 
